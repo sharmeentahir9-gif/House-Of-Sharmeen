@@ -1,0 +1,25 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">HOS monogram</title>
+  <defs>
+    <linearGradient id="gold" x1="32" y1="24" x2="224" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF2B6"/>
+      <stop offset="0.32" stop-color="#E0B954"/>
+      <stop offset="0.68" stop-color="#A87520"/>
+      <stop offset="1" stop-color="#F0D882"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="52" y1="40" x2="202" y2="222" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#252019"/>
+      <stop offset="1" stop-color="#0F0D0A"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="236" height="236" rx="58" fill="url(#dark)"/>
+  <rect x="17" y="17" width="222" height="222" rx="51" stroke="url(#gold)" stroke-width="4"/>
+  <path d="M52 159V91H68V117H103V91H119V159H103V132H68V159H52Z" fill="url(#gold)"/>
+  <rect x="114" y="102" width="58" height="58" rx="18" stroke="url(#gold)" stroke-width="9"/>
+  <rect x="132" y="72" width="23" height="10" rx="4" fill="url(#gold)"/>
+  <rect x="127" y="83" width="33" height="8" rx="4" fill="url(#gold)"/>
+  <circle cx="143" cy="131" r="5" fill="url(#gold)"/>
+  <path d="M184 143C190 149 201 152 212 152C224 152 230 148 230 143C230 138 226 136 214 134L204 132C184 129 175 121 175 108C175 92 189 82 212 82C227 82 241 86 250 93L241 104C233 98 223 95 212 95C200 95 194 99 194 105C194 110 199 112 211 114L221 116C240 119 249 127 249 141C249 157 235 167 211 167C194 167 178 162 168 154L184 143Z" fill="url(#gold)" transform="translate(-18 0)"/>
+  <path d="M64 190H192" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M128 181L137 190L128 199L119 190L128 181Z" fill="url(#gold)"/>
+</svg>

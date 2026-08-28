@@ -1,0 +1,26 @@
+<svg width="920" height="260" viewBox="0 0 920 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">HOS House of Sharmeen</title>
+  <desc id="desc">Premium all-gold House of Sharmeen fragrance wordmark for dark backgrounds.</desc>
+  <defs>
+    <linearGradient id="gold" x1="92" y1="24" x2="834" y2="226" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF2B6"/>
+      <stop offset="0.2" stop-color="#E6C56C"/>
+      <stop offset="0.48" stop-color="#B9852C"/>
+      <stop offset="0.72" stop-color="#F0D882"/>
+      <stop offset="1" stop-color="#A87520"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(118 0)">
+    <path d="M102 166V30H128V82H184V30H210V166H184V112H128V166H102Z" fill="url(#gold)"/>
+    <rect x="259" y="69" width="143" height="88" rx="32" stroke="url(#gold)" stroke-width="13"/>
+    <rect x="304" y="33" width="53" height="18" rx="7" fill="url(#gold)"/>
+    <rect x="293" y="51" width="75" height="13" rx="6.5" fill="url(#gold)"/>
+    <circle cx="331" cy="108" r="10" fill="url(#gold)"/>
+    <path d="M474 134C483 143 499 148 516 148C537 148 548 141 548 131C548 122 540 118 520 114L503 111C469 105 454 91 454 69C454 42 479 25 518 25C544 25 568 32 584 45L568 63C555 53 537 47 518 47C498 47 487 54 487 64C487 73 495 77 516 81L533 84C565 90 581 103 581 127C581 155 556 171 515 171C486 171 457 163 440 148L474 134Z" fill="url(#gold)"/>
+  </g>
+  <path d="M90 190H332" stroke="url(#gold)" stroke-width="2" opacity="0.9"/>
+  <path d="M588 190H830" stroke="url(#gold)" stroke-width="2" opacity="0.9"/>
+  <path d="M446 180L456 190L446 200L436 190L446 180Z" fill="url(#gold)"/>
+  <text x="460" y="225" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="12" fill="url(#gold)">HOUSE OF SHARMEEN</text>
+  <text x="460" y="252" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="7" fill="#E8C86F">SIGNATURE FRAGRANCES</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg width="920" height="260" viewBox="0 0 920 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">HOS House of Sharmeen</title>
+  <desc id="desc">Premium gold and charcoal House of Sharmeen fragrance wordmark.</desc>
+  <defs>
+    <linearGradient id="gold" x1="92" y1="24" x2="834" y2="226" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF2B6"/>
+      <stop offset="0.2" stop-color="#E6C56C"/>
+      <stop offset="0.48" stop-color="#B9852C"/>
+      <stop offset="0.72" stop-color="#F0D882"/>
+      <stop offset="1" stop-color="#A87520"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="220" y1="178" x2="700" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16120C"/>
+      <stop offset="0.5" stop-color="#3B2C16"/>
+      <stop offset="1" stop-color="#17130D"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(118 0)">
+    <path d="M102 166V30H128V82H184V30H210V166H184V112H128V166H102Z" fill="url(#gold)"/>
+
+    <g aria-label="O perfume bottle">
+      <rect x="259" y="69" width="143" height="88" rx="32" stroke="url(#gold)" stroke-width="13"/>
+      <rect x="304" y="33" width="53" height="18" rx="7" fill="url(#gold)"/>
+      <rect x="293" y="51" width="75" height="13" rx="6.5" fill="url(#gold)"/>
+      <path d="M302 108C302 91.984 314.984 79 331 79C347.016 79 360 91.984 360 108C360 124.016 347.016 137 331 137C314.984 137 302 124.016 302 108Z" fill="url(#gold)" fill-opacity="0.16"/>
+      <circle cx="331" cy="108" r="10" fill="url(#gold)"/>
+    </g>
+
+    <path d="M474 129C483 138 499 143 516 143C537 143 548 136 548 126C548 117 540 113 520 109L503 106C469 100 454 86 454 64C454 37 479 20 518 20C544 20 568 27 584 40L568 58C555 48 537 42 518 42C498 42 487 49 487 59C487 68 495 72 516 76L533 79C565 85 581 98 581 122C581 150 556 166 515 166C486 166 457 158 440 143L474 129Z" fill="url(#gold)" transform="translate(0 5)"/>
+  </g>
+
+  <g opacity="0.95">
+    <path d="M90 190H332" stroke="url(#gold)" stroke-width="2"/>
+    <path d="M588 190H830" stroke="url(#gold)" stroke-width="2"/>
+    <path d="M446 180L456 190L446 200L436 190L446 180Z" fill="url(#gold)"/>
+  </g>
+
+  <text x="460" y="225" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="12" fill="url(#dark)">HOUSE OF SHARMEEN</text>
+  <text x="460" y="252" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="7" fill="#9A762F">SIGNATURE FRAGRANCES</text>
+</svg>

@@ -1,0 +1,12 @@
+HOUSE OF SHARMEEN - DEPLOYMENT NOTE
+
+This is a Next.js project. Recommended deployment: Vercel.
+
+Easiest method:
+1. Extract this ZIP on your computer/phone.
+2. Upload the extracted project folder to a GitHub repository.
+3. Open Vercel -> Add New -> Project -> Import that GitHub repository.
+4. Deploy.
+5. In Vercel Project Settings -> Domains, add: houseofsharmeen.cc and www.houseofsharmeen.cc
+
+Important: Do not upload the ZIP itself inside public_html unless your hosting supports Node.js/Next.js and you configure the app server. For normal cPanel static hosting, a separate static export is needed.
