@@ -3,6 +3,8 @@ import { ordersTable } from '@/models/Schema';
 import { desc } from 'drizzle-orm';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 const formatPrice = (value: string | number) => {
   const num = typeof value === 'string' ? parseFloat(value) : value;
   return `Rs. ${num.toLocaleString('en-PK')}`;

@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { AdminOrderDetail } from '@/components/AdminOrderDetail';
 import { redirect } from 'next/navigation';
 
+export const dynamic = 'force-dynamic';
+
 const formatPrice = (value: string | number) => {
   const num = typeof value === 'string' ? parseFloat(value) : value;
   return `Rs. ${num.toLocaleString('en-PK')}`;
