@@ -1,4 +1,4 @@
-import { integer, pgTable, serial, timestamp } from 'drizzle-orm/pg-core';
+import { integer, pgTable, serial, timestamp, text, numeric } from 'drizzle-orm/pg-core';
 
 // This file defines the structure of your database tables using the Drizzle ORM.
 
@@ -20,5 +20,39 @@ export const counterSchema = pgTable('counter', {
     .defaultNow()
     .$onUpdate(() => new Date())
     .notNull(),
+  createdAt: timestamp('created_at', { mode: 'date' }).defaultNow().notNull(),
+});
+
+export type OrderStatus = 'NEW' | 'CONFIRMED' | 'SHIPPED' | 'DELIVERED' | 'CANCELLED';
+
+export const ordersTable = pgTable('orders', {
+  id: serial('id').primaryKey(),
+  orderId: text('order_id').notNull().unique(),
+  customerName: text('customer_name').notNull(),
+  phone: text('phone').notNull(),
+  address: text('address').notNull(),
+  city: text('city').notNull(),
+  notes: text('notes'),
+  subtotal: numeric('subtotal', { precision: 12, scale: 2 }).notNull(),
+  deliveryCharge: numeric('delivery_charge', { precision: 12, scale: 2 }).notNull(),
+  total: numeric('total', { precision: 12, scale: 2 }).notNull(),
+  paymentMethod: text('payment_method').notNull(), // 'COD'
+  status: text('status').notNull().default('NEW'), // NEW, CONFIRMED, SHIPPED, DELIVERED, CANCELLED
+  createdAt: timestamp('created_at', { mode: 'date' }).defaultNow().notNull(),
+  updatedAt: timestamp('updated_at', { mode: 'date' })
+    .defaultNow()
+    .$onUpdate(() => new Date())
+    .notNull(),
+});
+
+export const orderItemsTable = pgTable('order_items', {
+  id: serial('id').primaryKey(),
+  orderId: text('order_id').notNull(),
+  productName: text('product_name').notNull(),
+  productSize: text('product_size'),
+  productImage: text('product_image'),
+  price: numeric('price', { precision: 12, scale: 2 }).notNull(),
+  quantity: integer('quantity').notNull(),
+  lineTotal: numeric('line_total', { precision: 12, scale: 2 }).notNull(),
   createdAt: timestamp('created_at', { mode: 'date' }).defaultNow().notNull(),
 });
