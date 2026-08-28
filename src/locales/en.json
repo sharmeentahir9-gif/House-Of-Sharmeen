@@ -113,6 +113,8 @@
     "collection_title": "Find your HOS signature",
     "collection_description": "Explore the House of Sharmeen range with genuine product photography, premium presentation and options for him, for her and attar lovers.",
     "order_now": "Order now",
+    "add_to_cart": "Add to cart",
+    "cart": "Cart",
     "story_image_alt": "House of Sharmeen brand campaign portrait",
     "story_eyebrow": "The HOS identity",
     "story_title": "A fragrance wardrobe made to be remembered.",
@@ -196,5 +198,13 @@
     "footer_orders_title": "Find your signature fragrance.",
     "footer_copyright": "© 2026 House of Sharmeen. All rights reserved.",
     "footer_signature": "HOS • Signature Fragrances"
+  },
+  "CartPage": {
+    "meta_title": "Shopping Cart | House of Sharmeen",
+    "meta_description": "Review your House of Sharmeen fragrance selection and proceed to checkout."
+  },
+  "CheckoutPage": {
+    "meta_title": "Checkout | House of Sharmeen",
+    "meta_description": "Complete your House of Sharmeen order with delivery details and payment information."
   }
 }

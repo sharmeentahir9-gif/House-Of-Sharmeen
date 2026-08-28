@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { CartProvider } from '@/components/CartProvider';
+import CartLink from '@/components/CartLink';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 export default async function MarketingLayout(props: {
@@ -10,7 +12,8 @@ export default async function MarketingLayout(props: {
   const t = await getTranslations({ locale, namespace: 'Storefront' });
 
   return (
-    <div className="min-h-screen bg-[#fbf8f2] text-[#17130d]">
+    <CartProvider>
+      <div className="min-h-screen bg-[#fbf8f2] text-[#17130d]">
       <div className="bg-[#0d0c0a] px-4 py-2 text-center text-[10px] font-bold tracking-[0.18em] text-[#e8c86d] uppercase sm:text-xs">
         {t('announcement')}
       </div>
@@ -34,6 +37,7 @@ export default async function MarketingLayout(props: {
             <a href="#story" className="hidden rounded-full px-3 py-2 text-white/75 transition hover:bg-white/8 hover:text-[#efd47c] md:inline-flex sm:px-4">{t('nav_story')}</a>
             <a href="#campaign" className="hidden rounded-full px-3 py-2 text-white/75 transition hover:bg-white/8 hover:text-[#efd47c] lg:inline-flex sm:px-4">{t('nav_campaign')}</a>
             <a href="#contact" className="rounded-full border border-[#c79a3a]/45 bg-[#c79a3a]/12 px-3 py-2 text-[#f0d47b] transition hover:bg-[#c79a3a]/22 sm:px-4">{t('nav_contact')}</a>
+            <CartLink label={t('cart')} />
           </nav>
         </div>
       </header>
@@ -65,6 +69,7 @@ export default async function MarketingLayout(props: {
           <p>{t('footer_signature')}</p>
         </div>
       </footer>
-    </div>
+      </div>
+    </CartProvider>
   );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import AddToCartButton from '@/components/AddToCartButton';
 
 type IndexPageProps = {
   params: Promise<{ locale: string }>;
@@ -157,9 +158,16 @@ export default async function StorefrontPage(props: IndexPageProps) {
                   <p className="shrink-0 rounded-full bg-[#f2e8d4] px-3 py-1.5 text-sm font-black text-[#8d671d]">{t(`products.${product.key}.price`)}</p>
                 </div>
                 <p className="mt-3 line-clamp-2 text-sm leading-6 text-black/56">{t(`products.${product.key}.description`)}</p>
-                <a href="#contact" className="mt-5 inline-flex w-full items-center justify-center rounded-full border border-[#b58b33] bg-[#15120e] px-5 py-3 text-sm font-bold text-[#f1d77f] transition hover:bg-[#2a2419]">
-                  {t('order_now')}
-                </a>
+                <AddToCartButton
+                  product={{
+                    id: product.key,
+                    name: t(`products.${product.key}.name`),
+                    size: t(`products.${product.key}.size`),
+                    price: Number(t(`products.${product.key}.price`).replace(/[^0-9]/g, '')),
+                    image: product.image,
+                  }}
+                  label={t('add_to_cart')}
+                />
               </div>
             </article>
           ))}
